@@ -86,10 +86,14 @@
 
     <nav class="navbar navbar-2 navbar-expand-lg p-0">
         <div class="container-fluid container-fluid-2">
-            <button class="btn get-brochure-btn p-3">Get Brochure</button>
-            <!-- <a class="navbar-brand" href="#">
-                <button class="btn get-brochure-btn p-3">Get Brochure</button>
-            </a> -->
+            <button class="btn get-brochure-btn get-brochure-btn-1 p-3">
+                Get Brochure
+            </button>
+
+
+            <!-- <button target="_blank" class="btn get-brochure-btn get-brochure-btn-1 p-3" onclick="window.location.href='https://brelindia.com/assets/img/bg-images/home/Brouchers/BREL%20Brochure.pdf'">TEST Brochure</button> -->
+
+
             <button class="navbar-toggler navbar-toggler-2 custom-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                 <span class="material-symbols-outlined toggler-icon-2">
@@ -158,6 +162,7 @@
                     </ul>
                 </div>
             </div>
+            <button class="btn get-brochure-btn get-brochure-btn-2 p-3">Get Brochure</button>
         </div>
     </nav>
 
@@ -224,25 +229,46 @@
                 aria-label="Slide 2"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/img/img-1.jpg" class="d-block w-100" alt="Windmill">
+            <div class="carousel-item carousel-dark-overlay active">
+                <img src="./assets/img/img-3.jpg" class="d-block w-100" alt="Windmill">
                 <div class="carousel-caption">
                     <!-- <div class="carousel-caption d-none d-md-block"> -->
-                    <h6 class="text-start text-animation">| ENERGY TOMORROW</h6>
-                    <h5 class="text-start heading-1 text-animation">Powered</h5>
-                    <h2 class="text-start heading-2 text-animation">INNOVATION</h2>
+                    <h6 class="text-start text-animation h6">| ENERGY TOMORROW</h6>
+                    <h1 class="text-start heading-1 text-animation">Powered</h1>
+                    <h1 class="text-start heading-2 text-animation">INNOVATION</h1>
+                    <p class="text-start text-animation">
+                        Power your future sustainably with our cutting-edge solar solutions,
+                        <br>
+                        harnessing the sun's energy for a brighter tomorrow.
+                    </p>
+                    <!-- <p class="text-start text-animation">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        <br>
+                        Cupiditate eos praesentium tempora quos omnis fuga saepe modi alias,
+                        <br>
+                        quidem enim suscipit explicabo, culpa consequuntur impedit libero provident
+                        <br>
+                        beatae assumenda excepturi esse. Itaque laborum neque iure ipsa rerum,
+                        <br>
+                        similique sed deserunt.
+                    </p> -->
                     <div class="d-flex justify-content-start">
                         <button type="button" class="btn btn-success custom-button btn-md">DISCOVER MORE</button>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-dark-overlay">
                 <img src="./assets/img/img-2.jpg" class="d-block w-100" alt="Solar Panels">
                 <div class="carousel-caption">
                     <!-- <div class="carousel-caption d-none d-md-block"> -->
-                    <h6 class="text-start">| ENERGY TOMORROW</h6>
-                    <h5 class="text-start heading-1">Sustainable</h5>
-                    <h2 class="text-start heading-2">SUNLIGHT</h2>
+                    <h6 class="text-start h6">| ENERGY TOMORROW</h6>
+                    <h1 class="text-start heading-1">Sustainable</h1>
+                    <h1 class="text-start heading-2">SUNLIGHT</h1>
+                    <p class="text-start text-animation">
+                        Experience energy independence with our innovative solar technologies,
+                        <br>
+                        paving the way towards a greener, more sustainable future.
+                    </p>
                     <div class="d-flex justify-content-start">
                         <button type="button" class="btn btn-success custom-button btn-md">DISCOVER MORE</button>
                     </div>
@@ -262,9 +288,9 @@
     </div>
 
     <!-- OUR SERVICES -->
-    <div class="our-services">
-        <h4 class="d-flex justify-content-center green-heading mt-4 text-animation">| Our Services</h4>
-        <h1 class="d-flex justify-content-center text-animation">Our Solar Solutions</h1>
+    <div class="our-services mt-5 mb-5">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Our Services</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">Our Solar Solutions</h1>
         <div class="services-container">
             <div class="services-container-card">
                 <!-- <div class="services-container-card-icon">🌞</div> -->
@@ -273,9 +299,15 @@
                         wind_power
                     </span>
                 </div>
-                <h5 class="services-container-card-heading">Wind Turbines</h5>
+                <h5 class="services-container-card-heading h5">Wind Turbines</h5>
                 <p class="services-container-card-text">Wind turbines Powering a greener tomorrow.</p>
-                <button class="services-container-load-more-btn">LOAD MORE</button>
+
+                <button class="services-container-load-more-btn">READ MORE
+                    <span class="material-symbols-outlined services-container-arrow-icon">
+                        arrow_outward
+                    </span>
+                </button>
+
             </div>
             <div class="services-container-card">
                 <div class="services-container-card-icon">
@@ -283,9 +315,13 @@
                         water
                     </span>
                 </div>
-                <h5 class="services-container-card-heading">Hydropower</h5>
+                <h5 class="services-container-card-heading h5">Hydropower</h5>
                 <p class="services-container-card-text">Harness the power of water with our AquaForce.</p>
-                <button class="services-container-load-more-btn">LOAD MORE</button>
+                <button class="services-container-load-more-btn">READ MORE
+                    <span class="material-symbols-outlined services-container-arrow-icon">
+                        arrow_outward
+                    </span>
+                </button>
             </div>
             <div class="services-container-card">
                 <div class="services-container-card-icon">
@@ -293,9 +329,13 @@
                         solar_power
                     </span>
                 </div>
-                <h5 class="services-container-card-heading">Solar Panels</h5>
+                <h5 class="services-container-card-heading h5">Solar Panels</h5>
                 <p class="services-container-card-text">Ensure the longevity and efficiency of your solar.</p>
-                <button class="services-container-load-more-btn">LOAD MORE</button>
+                <button class="services-container-load-more-btn">READ MORE
+                    <span class="material-symbols-outlined services-container-arrow-icon">
+                        arrow_outward
+                    </span>
+                </button>
             </div>
             <div class="services-container-card">
                 <div class="services-container-card-icon">
@@ -303,11 +343,83 @@
                         construction
                     </span>
                 </div>
-                <h5 class="services-container-card-heading">Maintenance</h5>
+                <h5 class="services-container-card-heading h5">Maintenance</h5>
                 <p class="services-container-card-text">Entrust your renewable energy systems to our.</p>
-                <button class="services-container-load-more-btn">LOAD MORE</button>
+                <button class="services-container-load-more-btn">READ MORE
+                    <span class="material-symbols-outlined services-container-arrow-icon">
+                        arrow_outward
+                    </span>
+                </button>
             </div>
         </div>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-container p-4 d-flex flex-column align-items-center">
+        <h4 class="d-flex justify-content-center text-secondary-color-1 text-animation h4 mt-4">| Schedule a Free
+            Consultation</h4>
+        <h1 class="d-flex justify-content-center text-white text-animation h1">Get Started</h1>
+        <form class="custom-form text-white row g-3 mt-4 mb-4">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+                <label for="inputNumber" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="inputNumber">
+            </div>
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+
+            <div class="col-md-12">
+                <label for="inputStateBill" class="form-label">Monthly Electricity Bill</label>
+                <select id="inputStateBill" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Less Than ₹2000</option>
+                    <option>₹2000 to ₹5000</option>
+                    <option>₹5000 to ₹8000</option>
+                    <option>More Than ₹8000</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <!-- <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div> -->
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree with BREL's <a href="#">Terms of Service</a>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+            </div>
+        </form>
     </div>
 
     <!-- STATS -->
@@ -354,9 +466,9 @@
         </div> -->
 
     <!-- GALLERY -->
-    <div class="gallery">
-        <h4 class="d-flex justify-content-center green-heading mt-4 text-animation">| Gallery</h4>
-        <h1 class="d-flex justify-content-center text-animation">Solar Project Gallery</h1>
+    <div class="gallery mt-5">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Gallery</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">Solar Project Gallery</h1>
         <div class="gallery-container">
 
             <!-- <div class="gallery-item">
@@ -389,9 +501,9 @@
     </div>
 
     <!-- SLIDER -->
-    <div class="container">
-        <h4 class="d-flex justify-content-center green-heading mt-4 text-animation">| Business Partners</h4>
-        <h1 class="d-flex justify-content-center text-animation">Our Valued Partners</h1>
+    <div class="container mt-5 mb-5">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Business Partners</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">Our Valued Partners</h1>
         <div class="slider-container">
             <div class="slider-content">
                 <span>
@@ -426,10 +538,10 @@
 
     <!-- EXTRA INFO / OUR WORK -->
     <div class="extra-info">
-        <div class="row no-gutters">
-            <div class="col-md-6 extra-info-div">
-                <h5 class="extra-info-heading-1 text-animation">| Our Work</h5>
-                <h2 class="extra-info-heading-2 text-animation">Innovators in Energy Solutions</h2>
+        <div class="row no-gutters mt-3">
+            <div class="col-md-6 extra-info-div p-4">
+                <h5 class="extra-info-heading-1 text-animation h5">| Our Work</h5>
+                <h2 class="extra-info-heading-2 text-animation h2">Innovators in Energy Solutions</h2>
                 <p class="extra-info-paragraph">The phrase captures the essence of harnessing solar power not only as a
                     source of clean energy but also as a driving force behind advancements</p>
                 <button class="extra-info-button">EXPLORE NOW</button>
@@ -477,9 +589,9 @@
     </div> -->
 
     <!-- TESTIMONIALS 2 -->
-    <div class="container">
-        <h4 class="d-flex justify-content-center green-heading mt-4 text-animation">| Testimonials</h4>
-        <h1 class="d-flex justify-content-center text-animation">Happy Client Reviews</h1>
+    <div class="container mt-5 mb-5">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Testimonials</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">Happy Client Reviews</h1>
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -611,9 +723,10 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-left">
-            <h3 class="footer-logo">BREL</h3>
-            <p>Solar energy is generated when sunlight strikes solar panels, creating an electric field across the
-                layers of silicon within the panels, which then produces a flow of electricity.</p>
+            <!-- <h3 class="footer-logo h3">BREL</h3> -->
+            <img class="footer-logo pb-3" src="./assets/img/brel-logo-white.webp" alt="BREL" width="160px">
+            <p class="pb-3">Power your future sustainably with our cutting-edge solar solutions, harnessing the sun's
+                energy for a brighter tomorrow.</p>
             <div class="footer-icon-container">
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-twitter-x"></i>
@@ -622,17 +735,18 @@
             </div>
         </div>
         <div class="footer-middle">
-            <h4 class="footer-heading">Company</h4>
+            <h4 class="footer-heading h4">Useful Links</h4>
             <ul class="footer-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Products</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Solar Calculator</a></li>
             </ul>
         </div>
         <div class="footer-right">
-            <h4 class="footer-heading">Our Services</h4>
+            <h4 class="footer-heading h4">Our Services</h4>
             <ul class="footer-links">
                 <li><a href="#">Wind Turbines</a></li>
                 <li><a href="#">Hydropower</a></li>
@@ -640,6 +754,24 @@
                 <li><a href="#">Fossil Resources</a></li>
                 <li><a href="#">Maintenance</a></li>
             </ul>
+        </div>
+    </footer>
+
+    <!-- SUB-FOOTER -->
+    <footer class="sub-footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <p class="copyright-text">©2024 All rights reserved</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="sub-footer-links">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
