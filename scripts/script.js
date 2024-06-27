@@ -65,7 +65,7 @@ window.addEventListener("scroll", () => {
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -76,13 +76,12 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-backToTopBtn.onclick = function() {
+backToTopBtn.onclick = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
 // DROPDOWN 
-
 // document.addEventListener("DOMContentLoaded", function() {
 //     const dropdownToggle = document.querySelector('.dropdown-toggle-special');
 //     const dropdownMenu = document.querySelector('.dropdown-menu-special');
@@ -98,3 +97,13 @@ backToTopBtn.onclick = function() {
 //         }
 //     });
 // });
+
+// SWIPER
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

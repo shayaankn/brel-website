@@ -15,8 +15,12 @@
     <!-- Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/style.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,13 +90,13 @@
 
     <nav class="navbar navbar-2 navbar-expand-lg p-0">
         <div class="container-fluid container-fluid-2">
-            <button class="btn get-brochure-btn get-brochure-btn-1 p-3">
+            <!-- <button class="btn get-brochure-btn get-brochure-btn-1 p-3">
+                Get Brochure
+            </button> -->
+            <button class="btn get-brochure-btn get-brochure-btn-1 p-3"
+                onclick="window.open('https://brelindia.com/assets/img/bg-images/home/Brouchers/BREL%20Brochure.pdf', '_blank')">
                 Get Brochure
             </button>
-
-
-            <!-- <button target="_blank" class="btn get-brochure-btn get-brochure-btn-1 p-3" onclick="window.location.href='https://brelindia.com/assets/img/bg-images/home/Brouchers/BREL%20Brochure.pdf'">TEST Brochure</button> -->
-
 
             <button class="navbar-toggler navbar-toggler-2 custom-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
@@ -162,7 +166,13 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn get-brochure-btn get-brochure-btn-2 p-3">Get Brochure</button>
+            <!-- <button class="btn get-brochure-btn get-brochure-btn-2 p-3">
+                Get Brochure
+            </button> -->
+            <button class="btn get-brochure-btn get-brochure-btn-2 p-3"
+                onclick="window.open('https://brelindia.com/assets/img/bg-images/home/Brouchers/BREL%20Brochure.pdf', '_blank')">
+                Get Brochure
+            </button>
         </div>
     </nav>
 
@@ -535,12 +545,11 @@
         </div>
     </div>
 
-
     <!-- EXTRA INFO / OUR WORK -->
     <div class="extra-info">
         <div class="row no-gutters mt-3">
             <div class="col-md-6 extra-info-div p-4">
-                <h5 class="extra-info-heading-1 text-animation h5">| Our Work</h5>
+                <h4 class="extra-info-heading-1 text-animation h4">| Our Work</h4>
                 <h2 class="extra-info-heading-2 text-animation h2">Innovators in Energy Solutions</h2>
                 <p class="extra-info-paragraph">The phrase captures the essence of harnessing solar power not only as a
                     source of clean energy but also as a driving force behind advancements</p>
@@ -554,37 +563,282 @@
         </div>
     </div>
 
-    <!-- TESTIMONIALS -->
-    <!-- <div class="container">
-        <h4 class="d-flex justify-content-center green-heading mt-4 text-animation">| Testimonials</h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Switching to solar energy has been a game-changer for us. Not only have
-                        we significantly reduced our electricity bills, but we also feel good about our contribution to
-                        the environment. The installation process was seamless, and the team was professional and
-                        knowledgeable. We couldn't be happier with our decision!"</p>
-                    <h4 class="testimonial-name">- Sarah Thompson</h4><span>CEO, Thompson Homes</span>
+    <!-- FAQs -->
+    <!-- <div class="container mt-5 mb-5 p-4 d-flex flex-column align-items-center">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Frequently Asked Questions</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">FAQs</h1> 
+        <div class="accordion accordion-flush faq-container mt-3" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How do solar panels work?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-answer-text">Solar panels capture sunlight and convert it into electricity through the photovoltaic effect.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How long do solar panels last?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-answer-text">Solar panels typically last 25-30 years with proper maintenance.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Do solar panels work on cloudy days?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-answer-text">Yes, solar panels can still generate electricity on cloudy days, but their efficiency is reduced.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    How much maintenance do solar panels require?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body faq-answer-text">Solar panels require minimal maintenance, usually just regular cleaning and occasional inspections.</div>
+                </div>
+              </div>
+          </div>
+    </div> -->
+
+    <div class="container mt-5 mb-5 p-4 d-flex flex-column align-items-center">
+        <h4 class="d-flex justify-content-center green-heading text-animation h4">| Frequently Asked Questions</h4>
+        <h1 class="d-flex justify-content-center text-animation h1">FAQs</h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs mt-3" id="faqTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link faq-tab-link active" id="general-tab" data-bs-toggle="tab"
+                    data-bs-target="#general" type="button" role="tab" aria-controls="general"
+                    aria-selected="true">General</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link faq-tab-link" id="maintenance-tab" data-bs-toggle="tab"
+                    data-bs-target="#maintenance" type="button" role="tab" aria-controls="maintenance"
+                    aria-selected="false">Maintenance</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link faq-tab-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other"
+                    type="button" role="tab" aria-controls="other" aria-selected="false">Other</button>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content mt-3" id="faqTabsContent">
+            <!-- General Questions -->
+            <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <div class="accordion accordion-flush faq-container" id="accordionGeneral">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                How do solar panels work?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionGeneral">
+                            <div class="accordion-body faq-answer-text">Solar panels capture sunlight and convert it
+                                into electricity through the photovoltaic effect.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                How long do solar panels last?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionGeneral">
+                            <div class="accordion-body faq-answer-text">Solar panels typically last 25-30 years with
+                                proper maintenance.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Do solar panels work on cloudy days?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionGeneral">
+                            <div class="accordion-body faq-answer-text">Yes, solar panels can still generate electricity
+                                on cloudy days, but their efficiency is reduced.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                How much maintenance do solar panels require?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionGeneral">
+                            <div class="accordion-body faq-answer-text">Solar panels require minimal maintenance,
+                                usually just regular cleaning and occasional inspections.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"The solar panels installed by this company are top-notch. We were
-                        impressed by their efficiency and the quality of the service provided. Our energy savings are
-                        substantial, and the entire process from consultation to installation was handled expertly.
-                        Highly recommend their services to anyone considering solar energy!"</p>
-                    <h4 class="testimonial-name">- Michael Johnson</h4><span>Director, Johnson Electricals</span>
+
+            <!-- Maintenance Questions -->
+            <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
+                <div class="accordion accordion-flush faq-container" id="accordionMaintenance">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                How often should solar panels be cleaned?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionMaintenance">
+                            <div class="accordion-body faq-answer-text">Solar panels should be cleaned at least twice a
+                                year to maintain optimal efficiency.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                What is the best way to clean solar panels?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionMaintenance">
+                            <div class="accordion-body faq-answer-text">The best way to clean solar panels is with water
+                                and a soft brush or sponge. Avoid using harsh chemicals.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                Do solar panels need to be inspected?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionMaintenance">
+                            <div class="accordion-body faq-answer-text">Yes, solar panels should be inspected regularly
+                                to ensure they are functioning correctly and safely.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                Can solar panels be damaged by hail?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionMaintenance">
+                            <div class="accordion-body faq-answer-text">High-quality solar panels are designed to
+                                withstand hail up to a certain size, but extreme hail can cause damage.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"I was initially skeptical about switching to solar energy, but we
-                        significantly reduced our electricity bills. And we also feel good about our contribution to the
-                        environment. The installation process was seamless, and the team was professional and
-                        knowledgeable. We couldn't be happier with our decision!"</p>
-                    <h4 class="testimonial-name">- John Doe</h4><span>Manager, Doe Manufacturing</span>
+
+            <!-- Other Questions -->
+            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                <div class="accordion accordion-flush faq-container" id="accordionOther">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                Can I use solar panels for my home?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionOther">
+                            <div class="accordion-body faq-answer-text">Yes, solar panels are suitable for residential
+                                use and can significantly reduce your electricity bills.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                aria-controls="flush-collapseTen">
+                                Are there incentives for installing solar panels?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionOther">
+                            <div class="accordion-body faq-answer-text">Many governments offer incentives and tax
+                                credits for installing solar panels.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                                aria-controls="flush-collapseEleven">
+                                How much do solar panels cost?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionOther">
+                            <div class="accordion-body faq-answer-text">The cost of solar panels varies depending on the
+                                size of the system and installation costs.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                                aria-controls="flush-collapseTwelve">
+                                Can I install solar panels myself?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionOther">
+                            <div class="accordion-body faq-answer-text">While it is possible to install solar panels
+                                yourself, it is recommended to have them installed by a professional to ensure safety
+                                and efficiency.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS (SWIPER)-->
+    <!-- <div class="container mt-5 mb-5">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+                <div class="swiper-slide"><img src="./assets/img/gallery-img-1.jpg" alt="img-1"></div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div> -->
 
@@ -592,7 +846,6 @@
     <div class="container mt-5 mb-5">
         <h4 class="d-flex justify-content-center green-heading text-animation h4">| Testimonials</h4>
         <h1 class="d-flex justify-content-center text-animation h1">Happy Client Reviews</h1>
-
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -605,18 +858,6 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
                     <div class="container testimonial-container mb-5">
-                        <!-- <div class="card text-center">
-                            <div class="card-body">
-                                <p class="card-text">"Switching to solar energy has been a game-changer for us. Not only
-                                    have we significantly reduced our electricity bills, but we also feel good about our
-                                    contribution to the environment. The installation process was seamless, and the team
-                                    was
-                                    professional and knowledgeable. We couldn't be happier with our decision!"</p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                - Sarah Thompson (CEO, Thompson Homes)
-                            </div>
-                        </div> -->
                         <div class="testimonial-card">
                             <p class="testimonial-text">
                                 "Switching to solar energy has been a game-changer for us. Not only
@@ -637,21 +878,6 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <div class="container testimonial-container mb-5">
-                        <!-- <div class="card text-center">
-                            <div class="card-body">
-                                <p class="card-text">"The solar panels installed by this company are top-notch. We were
-                                    impressed by their efficiency and the quality of the service provided. Our energy
-                                    savings are substantial, and the entire process from consultation to installation
-                                    was
-                                    handled expertly. Highly recommend their services to anyone considering solar
-                                    energy!"
-                                </p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                - Michael Johnson (Director, Johnson Electricals)
-                            </div>
-                        </div> -->
-
                         <div class="testimonial-card">
                             <p class="testimonial-text">
                                 "The solar panels installed by this company are top-notch. We were
@@ -670,24 +896,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="container testimonial-container mb-5">
-                        <!-- <div class="card text-center">
-                            <div class="card-body">
-                                <p class="card-text">"I was initially skeptical about switching to solar energy, but we
-                                    significantly reduced our electricity bills. And we also feel good about our
-                                    contribution to the environment. The installation process was seamless, and the team
-                                    was
-                                    professional and knowledgeable. We couldn't be happier with our decision!"</p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                - John Doe (Manager, Doe Manufacturing)
-                            </div>
-                        </div> -->
-
                         <div class="testimonial-card">
                             <p class="testimonial-text">"Switching to solar energy has been a game-changer for us. Not
                                 only
@@ -784,12 +996,14 @@
 
 
     <script src="scripts/script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script> -->
+
+    <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
