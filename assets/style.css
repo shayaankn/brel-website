@@ -846,6 +846,7 @@
 .extra-info-heading-1 {
     font-size: 1.2rem;
     font-weight: 600;
+    color: var(--secondary-color-1);
 }
 
 .extra-info-heading-2 {
@@ -855,6 +856,7 @@
 
 .extra-info-paragraph {
     font-size: 1.1rem;
+    color: var(--secondary-color-1);
 }
 
 .extra-info-button {
@@ -896,11 +898,11 @@
         margin-top: 20px;
         margin-bottom: 0px;
     }
-
-    /* UNCOMMENT THE FOLLOWING IF ANY ISSUE ARISES IN IMAGE ALIGNMENT */
-    /* .extra-info-img img {
-        margin: 0px;
-    } */
+    
+    .extra-info-img img {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
 
     .extra-info-div {
         padding: 20px;
