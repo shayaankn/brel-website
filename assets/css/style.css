@@ -14,6 +14,109 @@
     font-family: "Lexend", sans-serif;
 }
 
+/* Fonts */
+
+/* NOTE - The link to Google Fonts is still active in the 'head' section (under 'fonts'), REMOVE IF NECESSARY */
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Thin.ttf') format('truetype');
+    font-weight: 100; /* Thin weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-ExtraLight.ttf') format('truetype');
+    font-weight: 200; /* ExtraLight weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Light.ttf') format('truetype');
+    font-weight: 300; /* Light weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* ExtraBold weight */
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url('../fonts/Lexend-Black.ttf') format('truetype');
+    font-weight: 900; /* Black weight */
+}
+
+.thin-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 100;
+}
+
+.extra-light-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 200;
+}
+
+.light-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.regular-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+.medium-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+}
+
+.semi-bold-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+.bold-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+}
+
+.extra-bold-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+}
+
+.black-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 900;
+}
+
 /* Default margin and padding */
 
 .m-0 {
@@ -1053,6 +1156,64 @@
 
 /* FORM */
 
+/* OLDER */
+/* .form-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+} */
+
+/* OLDER */
+/* .form-img img {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 10px;
+} */
+
+/* .form-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.form-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+} */
+
+.form-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.form-img img {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-img {
+        display: none;
+    }
+}
+
+
 .text-secondary-color-1 {
     color: var(--light-color);
 }
@@ -1092,9 +1253,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: var(--black); */
     background-color: var(--dark-color);
-    padding: 20px;
+    box-sizing: border-box !important;
+    margin: 0px !important; /* REMOVE IF ANY PROBLEMS ARISE */
+    /* padding: 20px; */
 }
 
 @media (min-width: 992px) {
@@ -1108,6 +1270,7 @@
     text-align: center;
     margin: 20px;
     padding: 10px 30px 10px 30px;
+    box-sizing: border-box;
 }
 
 .stats-number {
@@ -1126,7 +1289,6 @@
     color: var(--white);
     font-size: 1rem;
 }
-
 
 /* GALLERY */
 
@@ -1219,9 +1381,9 @@
     padding-left: 0;
 }
 
-.extra-info-div {
+/* .extra-info-div {
     padding: 40px;
-}
+} */
 
 .extra-info-div>h5,
 .extra-info-div>h2 {
@@ -1264,7 +1426,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     box-sizing: border-box;
 }
 
@@ -1289,9 +1451,9 @@
         padding-top: 0px;
     }
 
-    .extra-info-div {
+    /* .extra-info-div {
         padding: 20px;
-    }
+    } */
 }
 
 /* TESTIMONIALS (SWIPER) */
@@ -1426,17 +1588,51 @@
     background-color: var(--primary-color);
 }
 
-.faq-tab-link {
-    color: var(--secondary-color);
+/* .accordion-button::after {
+    color: yellow !important;
+    background-color: pink;
+} */
+
+.accordion-button:not(.collapsed)::after {
+    /* color: green !important;
+    background-color: red; */
+    display: none;
 }
 
+.faq-tab-link {
+    color: var(--white);
+    border-radius: 0px !important;
+    background-color: var(--primary-color);
+    border: none !important;
+}
+
+.faq-tab-link.active {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    transform: scaleX(100%) scaleY(100%) !important;
+    z-index: 99;
+}
+
+.faq-tab-link:hover {
+    color: var(--white) !important;
+}
+
+.bi-quora {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding-right: 10px;
+    transition: color 0.3s ease;
+}
+
+/* .bi-quora:hover {
+    color: var(--light-color);
+} */
+
+.answer-ans {
+    font-weight: 600;
+}
 
 @media (min-width: 992px) {
-    .footer-icon-container {
-        justify-content: flex-start;
-        padding: 0px;
-    }
-
     .faq-tab-link {
         font-size: 1.2rem;
     }
