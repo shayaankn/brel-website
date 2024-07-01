@@ -21,55 +21,64 @@
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Thin.ttf') format('truetype');
-    font-weight: 100; /* Thin weight */
+    font-weight: 100;
+    /* Thin weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-ExtraLight.ttf') format('truetype');
-    font-weight: 200; /* ExtraLight weight */
+    font-weight: 200;
+    /* ExtraLight weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Light.ttf') format('truetype');
-    font-weight: 300; /* Light weight */
+    font-weight: 300;
+    /* Light weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Regular.ttf') format('truetype');
-    font-weight: 400; /* Regular weight */
+    font-weight: 400;
+    /* Regular weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Medium.ttf') format('truetype');
-    font-weight: 500; /* Medium weight */
+    font-weight: 500;
+    /* Medium weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-SemiBold.ttf') format('truetype');
-    font-weight: 600; /* SemiBold weight */
+    font-weight: 600;
+    /* SemiBold weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Bold.ttf') format('truetype');
-    font-weight: 700; /* Bold weight */
+    font-weight: 700;
+    /* Bold weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-ExtraBold.ttf') format('truetype');
-    font-weight: 800; /* ExtraBold weight */
+    font-weight: 800;
+    /* ExtraBold weight */
 }
 
 @font-face {
     font-family: "Lexend";
     src: url('../fonts/Lexend-Black.ttf') format('truetype');
-    font-weight: 900; /* Black weight */
+    font-weight: 900;
+    /* Black weight */
 }
 
 .thin-text {
@@ -809,7 +818,7 @@
 
 .dropdown-2 {
     background-color: var(--secondary-color);
-    margin-left: 12px; 
+    margin-left: 12px;
 }
 
 /* FIX OF DROPDOWN ISSUE */
@@ -818,7 +827,7 @@
         transform: translateY(62px) translateX(-130px);
         background-color: var(--secondary-color);
         font-size: 0.8rem;
-        margin-left: 12px; 
+        margin-left: 12px;
     }
 }
 
@@ -1109,11 +1118,11 @@
         color: var(--white);
         font-size: 50px;
     }
-    
+
     .services-container-card-icon:hover {
         background-color: var(--primary-color);
     }
-    
+
     .services-container-card-icon:hover * {
         color: var(--white) !important;
     }
@@ -1220,7 +1229,7 @@
 
 .form-container {
     background-color: var(--primary-color);
-    
+
     /* ENABLE THIS IF ANY PROBLEMS ARISE */
     /* min-height: 100vh; */
 }
@@ -1255,7 +1264,8 @@
     justify-content: center;
     background-color: var(--dark-color);
     box-sizing: border-box !important;
-    margin: 0px !important; /* REMOVE IF ANY PROBLEMS ARISE */
+    margin: 0px !important;
+    /* REMOVE IF ANY PROBLEMS ARISE */
     /* padding: 20px; */
 }
 
@@ -1445,7 +1455,7 @@
         margin-top: 20px;
         margin-bottom: 0px;
     }
-    
+
     .extra-info-img img {
         margin-top: 0px;
         padding-top: 0px;
@@ -1457,6 +1467,32 @@
 }
 
 /* TESTIMONIALS (SWIPER) */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
 
 /* .swiper {
     width: 100%;
@@ -1493,14 +1529,18 @@
 }
 
 .first-quote {
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1); /* For Safari */
+    transform: scaleY(-1);
+    /* For Safari */
+    -webkit-transform: scaleY(-1);
     position: absolute;
     left: 0;
     top: 0;
 }
 
 .second-quote {
+    transform: scaleX(-1);
+    /* For Safari */
+    -webkit-transform: scaleX(-1);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1509,6 +1549,17 @@
 .testimonial-container {
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* TRIANGLE */
+.testimonial-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    border: 5rem solid var(--white);
+    border-color: transparent;
+    border-top: var(--primary-color);
 }
 
 .testimonial-card {
@@ -1520,7 +1571,7 @@
     text-align: center;
 
     /* REMOVE IF ANY PROBLEM ARISE */
-    position: relative; 
+    position: relative;
     padding-left: 20px;
 }
 
@@ -1545,8 +1596,8 @@
 
 .testimonial-image {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     object-fit: cover;
     margin-right: 15px;
 }
@@ -1688,8 +1739,8 @@
     padding-right: 40px;
 }
 
-.footer-left > p {
-text-align: left;
+.footer-left>p {
+    text-align: left;
 }
 
 /* .footer-middle,
@@ -1812,4 +1863,4 @@ text-align: left;
 
 #backToTopBtn:hover {
     background-color: var(--secondary-color);
-}  
+}
