@@ -1,6 +1,9 @@
+//=======================================================
 // TEXT ANIMATION
+//=======================================================
+
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     // Older isInViewport function - issue - on some screens, the text wasn't appearing
     // function isInViewport(element) {
     //     const rect = element.getBoundingClientRect();
@@ -22,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             rect.right <= (window.innerWidth + tolerance || document.documentElement.clientWidth + tolerance)
         );
     }
-    
+
     function checkVisibility() {
         const elements = document.querySelectorAll('.text-animation');
         elements.forEach(element => {
@@ -37,44 +40,96 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility();
 });
 
-
+//=======================================================
 // COUNTER
+//=======================================================
+
+// const counters = document.querySelectorAll(".counters span");
+// const container = document.querySelector(".counters");
+
+// let activated = false;
+
+// window.addEventListener("scroll", () => {
+//     if (pageYOffset > container.offsetTop - container.offsetHeight - 700 && activated === false) {
+//         counters.forEach(counter => {
+//             counter.innerText = 0;
+//             let count = 0;
+//             function updateCount() {
+//                 const target = parseInt(counter.dataset.count);
+//                 if (count < target) {
+//                     count++;
+//                     counter.innerText = count;
+//                     setTimeout(updateCount, 40);
+//                 }
+//                 else {
+//                     counter.innerText = target;
+//                 }
+//             }
+//             updateCount()
+//             activated = true;
+//         });
+//     }
+//     else if (pageYOffset < container.offsetTop - container.offsetHeight - 1000 || pageYOffset === 0 && activated === true) {
+//         counters.forEach(counter => {
+//             counter.innerText = 0;
+//         });
+//         activated = false;
+//     }
+// });
+
 const counters = document.querySelectorAll(".counters span");
 const container = document.querySelector(".counters");
 
 let activated = false;
 
-window.addEventListener("scroll", () => {
-    if (pageYOffset > container.offsetTop - container.offsetHeight - 700 && activated === false) {
-        counters.forEach(counter => {
-            counter.innerText = 0;
-            let count = 0;
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top + 600 >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
-            function updateCount() {
-                const target = parseInt(counter.dataset.count);
-                if (count < target) {
-                    count++;
-                    counter.innerText = count;
-                    setTimeout(updateCount, 20);
-                }
-                else {
-                    counter.innerText = target;
-                }
+function startCounters() {
+    counters.forEach(counter => {
+        counter.innerText = 0;
+        let count = 0;
+        function updateCount() {
+            const target = parseInt(counter.dataset.count);
+            if (count < target) {
+                count++;
+                counter.innerText = count;
+                setTimeout(updateCount, 40);
+            } else {
+                counter.innerText = target;
             }
-            updateCount()
-            activated = true;
-        });
+        }
+        updateCount();
+        activated = true;
+    });
+}
 
-    }
-    else if (pageYOffset < container.offsetTop - container.offsetHeight - 1000 || pageYOffset === 0 && activated === true) {
-        counters.forEach(counter => {
-            counter.innerText = 0;
-        });
-        activated = false;
-    }
-})
+function resetCounters() {
+    counters.forEach(counter => {
+        counter.innerText = 0;
+    });
+    activated = false;
+}
 
+window.addEventListener("scroll", () => {
+    if (isInViewport(container) && !activated) {
+        startCounters();
+    } else if (!isInViewport(container) && activated) {
+        resetCounters();
+    }
+});
+
+//=======================================================
 // BACK TO TOP
+//=======================================================
+
 let backToTopBtn = document.getElementById("backToTopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -94,7 +149,10 @@ backToTopBtn.onclick = function () {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-// DROPDOWN 
+//=======================================================
+// DROPDOWN
+//=======================================================
+
 // document.addEventListener("DOMContentLoaded", function() {
 //     const dropdownToggle = document.querySelector('.dropdown-toggle-special');
 //     const dropdownMenu = document.querySelector('.dropdown-menu-special');
