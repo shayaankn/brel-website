@@ -1,15 +1,28 @@
 // TEXT ANIMATION
 document.addEventListener("DOMContentLoaded", function () {
+    
+    // Older isInViewport function - issue - on some screens, the text wasn't appearing
+    // function isInViewport(element) {
+    //     const rect = element.getBoundingClientRect();
+    //     return (
+    //         rect.top >= 0 &&
+    //         rect.left >= 0 &&
+    //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    //     );
+    // }
+
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
+        const tolerance = 50; // Adjust this value as needed
         return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.top >= -tolerance &&
+            rect.left >= -tolerance &&
+            rect.bottom <= (window.innerHeight + tolerance || document.documentElement.clientHeight + tolerance) &&
+            rect.right <= (window.innerWidth + tolerance || document.documentElement.clientWidth + tolerance)
         );
     }
-
+    
     function checkVisibility() {
         const elements = document.querySelectorAll('.text-animation');
         elements.forEach(element => {
