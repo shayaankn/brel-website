@@ -244,7 +244,7 @@
         width: 100%;
         height: 200px;
     } */
-    
+
     .team-member:hover img {
         transform: scale(1);
     }
@@ -261,11 +261,11 @@
     margin: 0 auto;
 }
 
-/* .business-partners-card>span {
+/* .business-partner-image-container {
     background-color: red;
-    height: 800px !important;
+    height: 200px;
 } */
 
-.business-partners-about-us-image {
-    width: 100px !important;
-}
+/* .business-partners-about-us-image {
+    width: auto;
+} */
