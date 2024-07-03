@@ -8,6 +8,26 @@
     --logo-color-secondary: #9b9d68;
     --white: #ffffff;
     --black: #000000;
+    --test-color: red;
+
+    --thin-text-font-family: 'Lexend', sans-serif;
+    --thin-text-font-weight: 100;
+    --extra-light-text-font-family: 'Lexend', sans-serif;
+    --extra-light-text-font-weight: 200;
+    --light-text-font-family: 'Lexend', sans-serif;
+    --light-text-font-weight: 300;
+    --regular-text-font-family: 'Lexend', sans-serif;
+    --regular-text-font-weight: 400;
+    --medium-text-font-family: 'Lexend', sans-serif;
+    --medium-text-font-weight: 500;
+    --semi-bold-text-font-family: 'Lexend', sans-serif;
+    --semi-bold-text-font-weight: 600;
+    --bold-text-font-family: 'Lexend', sans-serif;
+    --bold-text-font-weight: 700;
+    --extra-bold-text-font-family: 'Lexend', sans-serif;
+    --extra-bold-text-font-weight: 800;
+    --black-text-font-family: 'Lexend', sans-serif;
+    --black-text-font-weight: 900;
 }
 
 * {
@@ -2291,17 +2311,15 @@
 .extra-info {
     background-color: var(--primary-color);
     color: var(--white);
-    overflow: hidden;
+
     /* ADDED LATER */
     padding: 0 15px;
-    /* ADDED LATER */
+    overflow: hidden;
 }
 
 .no-gutters {
     margin-right: 0;
-    /* ADDED LATER */
     margin-left: 0;
-    /* ADDED LATER */
 }
 
 .no-gutters>.col-md-6 {
