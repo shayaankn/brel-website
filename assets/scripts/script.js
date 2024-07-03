@@ -1,6 +1,6 @@
-//=======================================================
-// TEXT ANIMATION
-//=======================================================
+//========================================================
+//---------------------TEXT ANIMATION---------------------
+//========================================================
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             rect.bottom <= (window.innerHeight + tolerance || document.documentElement.clientHeight + tolerance) &&
             rect.right <= (window.innerWidth + tolerance || document.documentElement.clientWidth + tolerance)
         );
-    }
+    };
 
     function checkVisibility() {
         const elements = document.querySelectorAll('.text-animation');
@@ -33,16 +33,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.classList.add('visible');
             }
         });
-    }
+    };
 
     window.addEventListener('scroll', checkVisibility);
 
     checkVisibility();
 });
 
-//=======================================================
-// COUNTER
-//=======================================================
+//=================================================
+//---------------------COUNTER---------------------
+//=================================================
 
 // const counters = document.querySelectorAll(".counters span");
 // const container = document.querySelector(".counters");
@@ -85,12 +85,12 @@ let activated = false;
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        rect.top + 600 >= 0 &&
+        rect.top + 600 >= 0 && // in case of any issue, replace this line with: rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-}
+};
 
 function startCounters() {
     counters.forEach(counter => {
@@ -109,14 +109,14 @@ function startCounters() {
         updateCount();
         activated = true;
     });
-}
+};
 
 function resetCounters() {
     counters.forEach(counter => {
         counter.innerText = 0;
     });
     activated = false;
-}
+};
 
 window.addEventListener("scroll", () => {
     if (isInViewport(container) && !activated) {
@@ -126,9 +126,9 @@ window.addEventListener("scroll", () => {
     }
 });
 
-//=======================================================
-// BACK TO TOP
-//=======================================================
+//=====================================================
+//---------------------BACK TO TOP---------------------
+//=====================================================
 
 let backToTopBtn = document.getElementById("backToTopBtn");
 
@@ -141,17 +141,17 @@ function scrollFunction() {
     } else {
         backToTopBtn.style.display = "none";
     }
-}
+};
 
 // When the user clicks on the button, scroll to the top of the document
 backToTopBtn.onclick = function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-}
+};
 
-//=======================================================
-// DROPDOWN
-//=======================================================
+//==================================================
+//---------------------DROPDOWN---------------------
+//==================================================
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     const dropdownToggle = document.querySelector('.dropdown-toggle-special');
