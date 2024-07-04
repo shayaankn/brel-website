@@ -254,7 +254,109 @@
     color: var(--secondary-color);
 }
 
+
+
+/* OUR PRODUCTS SECTION */
+
+.our-products-section {
+    position: relative;
+    /* height: 560px; */
+    max-height: 1200px;
+    background-image: url('../img/our products/photovoltaic-system-2742304_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.our-products-image-dynamic {
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+}
+
+.our-products-image-dynamic img {
+    display: block;
+    max-width: 100%;
+    /* max-width: 90%; */
+    height: auto;
+    animation: levitate 2s ease-in-out infinite alternate;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* THIS IS TO PREVENT IMAGE RESIZING, IT WAS CREATING A LOT OF ISSUES */
+.fixed-size-image {
+    width: 400px;
+    height: 400px;
+}
+
+/* .our-products-image-static {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+} */
+
+/* .our-products-image-static img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+/* @media (max-width: 768px) {
+    .our-products-image-dynamic {
+        display: none;
+    }
+} */
+
+/* @media (min-width: 769px) {
+    .our-products-image-static {
+        display: none;
+    }
+} */
+
+.stars-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(0%, -50%); */
+    /* transform: translateX(0%); */
+    z-index: 10;
+    animation: rotateStars 5s linear infinite;
+}
+
+@keyframes rotateStars {
+    /* from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } */
+    from {
+        transform: translate(-1%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-1%, -50%) rotate(360deg);
+    }
+}
+
 /* BUSINESS PARTNERS */
+
+.business-partners-fixed-size-image {
+    width: 200px !important;
+    height: 80px !important;
+    overflow: visible;
+}
 
 .business-partners-about-us-image {
     max-width: 260px;
@@ -272,10 +374,27 @@
         position: relative;
 }
 
+.light-green-container {
+    background-color: var(--light-green);
+}
+
+.light-orange-container {
+    background-color: var(--light-orange);
+}
+
+.light-purple-container {
+    background-color: var(--light-purple);
+}
+
+.light-blue-container {
+    background-color: var(--light-blue);
+}
+
 /* .business-partners-container {
     max-width: 600px;
     margin: 0 auto;
 } */
+
 /* 
 .business-partner-image-container {
     background-color: red;

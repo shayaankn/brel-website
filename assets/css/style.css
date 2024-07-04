@@ -10,6 +10,11 @@
     --black: #000000;
     --test-color: red;
 
+    --light-green: rgb(246, 255, 241);
+    --light-orange: rgb(255, 248, 236);
+    --light-purple: rgb(255, 240, 255);
+    --light-blue: rgb(246, 240, 255); 
+
     --thin-text-font-family: 'Lexend', sans-serif;
     --thin-text-font-weight: 100;
     --extra-light-text-font-family: 'Lexend', sans-serif;
@@ -2468,8 +2473,8 @@
     /* For Safari */
     -webkit-transform: scaleY(-1);
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -6px;
+    top: -4px;
 }
 
 .second-quote {
@@ -2477,8 +2482,8 @@
     /* For Safari */
     -webkit-transform: scaleX(-1);
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -6px;
+    bottom: -4px;
 }
 
 .testimonial-container {
@@ -2580,11 +2585,11 @@
     background-color: pink;
 } */
 
-.accordion-button:not(.collapsed)::after {
-    /* color: rgb(230, 0, 0) !important; */
-    /* background-color: rgb(216, 114, 114); */
+/* .accordion-button:not(.collapsed)::after {
+    color: rgb(230, 0, 0) !important;
+    background-color: rgb(216, 114, 114);
     display: none;
-}
+} */
 
 .faq-tab-link {
     color: var(--white);
@@ -2802,4 +2807,18 @@
 
 #backToTopBtn:hover {
     background-color: var(--secondary-color);
+}
+
+/* EXTRAS */
+
+.high-z-index {
+    z-index: 99;
+}
+
+.white-heading {
+    color: var(--white);
+}
+
+.light-color-heading {
+    color: var(--light-color);
 }
