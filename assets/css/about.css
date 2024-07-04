@@ -256,6 +256,22 @@
 
 /* BUSINESS PARTNERS */
 
+.business-partners-about-us-image {
+    max-width: 260px;
+}
+
+.business-partners-text {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: justify;
+        z-index: 9999;
+        padding: 1rem;
+    
+        /* REMOVE IF ANY PROBLEM ARISE */
+        position: relative;
+}
+
 /* .business-partners-container {
     max-width: 600px;
     margin: 0 auto;
