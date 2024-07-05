@@ -295,8 +295,8 @@
 
 /* THIS IS TO PREVENT IMAGE RESIZING, IT WAS CREATING A LOT OF ISSUES */
 .fixed-size-image {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 }
 
 /* .our-products-image-static {
