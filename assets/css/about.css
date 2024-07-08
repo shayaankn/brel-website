@@ -76,19 +76,48 @@
 .about-us-card {
     background-color: var(--white);
     color: var(--black);
+
+
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 20px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+
+
+    box-sizing: border-box;
 }
 
 .about-us-card .subdiv {
-    /* border-right: 1px solid var(--secondary-color); */
-    padding-right: 15px;
+    border-right: 1px solid lightgray;
+    /* padding-right: 15px; */
+
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    padding: 20px;
+
+    /* Updates */
+    /* border-radius: 10px; */
+    /* padding: 20px; */
+    /* margin-right: 10px; */
+    /* margin-bottom: 10px; */
+    /* box-shadow: 0 0 14px rgba(0, 0, 0, 0.2); */
+    /* box-sizing: border-box; */
+    /* background-color: red; */
+}
+
+@media (max-width: 768px) {
+    .about-us-card .subdiv {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
 }
 
 .about-us-card .subdiv:last-child {
     border-right: none;
+
+
+    /* Updates */
+    /* margin-right: none; */
 }
 
 .about-us-card .subdiv span {
@@ -120,9 +149,7 @@
     color: var(--secondary-color);
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     transform: translateY(4px);
 }
 
