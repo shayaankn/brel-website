@@ -76,6 +76,136 @@
     color: var(--primary-color);
 }
 
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    /* Added later */
+    position: relative;
+    align-items: center;
+}
+
+.timeline-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-icon>span {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-image {
+    order: 1;
+}
+
+.timeline-content,
+.timeline-image {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    /* background: white; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+    color: var(--black);
+}
+
+.timeline-content p {
+    color: var(--black);
+}
+
+.timeline-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item .timeline-content,
+    .timeline-item .timeline-image {
+        width: 100%;
+        order: initial;
+    }
+
+    .timeline::before {
+        left: 22px;
+        transform: none;
+    }
+
+    /* OLD */
+    /* .timeline-item:nth-child(even) .timeline-content, 
+    .timeline-item:nth-child(even) .timeline-image {
+        order: initial;
+    } */
+
+    .timeline-item .timeline-content {
+        order: 2;
+    }
+    .timeline-item .timeline-image {
+        order: 1;
+    }
+
+    /* THIS IS A FIX TO ORDER ISSUES ON SMALLER SCREENS */
+    .timeline-item:nth-child(even) .timeline-content {
+        order: 2;
+    }
+    .timeline-item:nth-child(even) .timeline-image {
+        order: 1;
+    }
+
+    .timeline-icon {
+        left: 0px;
+        /* transform: none; */
+        transform: translateY(-40px);
+        margin-bottom: 10px;
+    }
+
+    .timeline-item {
+        padding: 0px 2px 0px 18px;
+    }
+}
 
 /* SERVICES CARDS */
 
@@ -238,4 +368,32 @@
 .sub-section-icons-div-icon {
     color: var(--secondary-color);
     font-size: 3rem !important;
+
+    transition: transform 0.2s;
+}
+
+.sub-section-icons-div-card:hover .sub-section-icons-div-icon {
+    animation: vibrate 0.6s linear infinite;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
