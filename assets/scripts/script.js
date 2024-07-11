@@ -168,3 +168,55 @@ backToTopBtn.onclick = function () {
 //         }
 //     });
 // });
+
+
+//==================================================
+//-------------ABOUT PAGE - OUR PRODUCTS------------
+//==================================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('#product-tabs .nav-link');
+    const productTitle = document.getElementById('product-title');
+    const productDescription = document.getElementById('product-description');
+    // const productDimensions = document.getElementById('product-dimensions');
+    // const productPower = document.getElementById('product-power');
+    // const productWarranty = document.getElementById('product-warranty');
+    const productImage = document.getElementById('product-image');
+
+    const products = {
+        'monocrystalline-tab': {
+            title: 'Monocrystalline Solar Cell Panels',
+            description: 'Monocrystalline solar panels are made from a single continuous crystal structure. They are cut from a single, pure silicon crystal, hence the name "mono" which means single. These panels are easily recognizable by their uniform dark color and rounded edges.',
+            // dimensions: '1.5 meters by 1 meter',
+            // power: '300 watts of power under optimal sunlight conditions',
+            // warranty: '25-year performance warranty and a 10-year product warranty',
+            image: './assets/img/our products/our-product-1-alt.webp'
+        },
+        'polycrystalline-tab': {
+            title: 'Polycrystalline Solar Cell Panels',
+            description: 'Polycrystalline solar panels, also known as multicrystalline panels, are made from silicon crystals that are melted together. They have a less uniform appearance with a speckled blue color due to the different crystals that are visible on the surface.',
+            // dimensions: '1.4 meters by 0.9 meters',
+            // power: '280 watts of power under optimal sunlight conditions',
+            // warranty: '20-year performance warranty and a 10-year product warranty',
+            image: './assets/img/our products/our-product-1-alt.webp'
+        }
+    };
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(event) {
+            event.preventDefault();
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+
+            const productKey = this.id;
+            const product = products[productKey];
+
+            productTitle.textContent = product.title;
+            productDescription.textContent = product.description;
+            // productDimensions.textContent = product.dimensions;
+            // productPower.textContent = product.power;
+            // productWarranty.textContent = product.warranty;
+            productImage.src = product.image;
+        });
+    });
+});
