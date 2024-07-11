@@ -99,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -149,7 +149,7 @@
     content: '';
     position: absolute;
     width: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -196,7 +196,7 @@
     }
 
     .timeline-icon {
-        left: 0px;
+        left: -1px;
         /* transform: none; */
         transform: translateY(160px);
         margin-bottom: 10px;
