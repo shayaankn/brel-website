@@ -2258,8 +2258,20 @@
 
 .custom-form {
     width: 100%;
-    /* Ensure the form takes full width of its container */
     max-width: 600px;
+}
+
+.custom-form-2 {
+    /* FOR "GET A QUOTE" MODAL */
+    width: 100%;
+    max-width: 600px;
+    color: var(--black);
+}
+
+.input-group .flag-icon {
+    width: 20px;
+    height: auto;
+    /* margin-left: 4px; */
 }
 
 .text-light-color {
@@ -2275,6 +2287,19 @@
 
 .form-submit-btn:hover {
     background-color: var(--secondary-color);
+    color: var(--white) !important;
+}
+
+.form-submit-btn-2 {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* padding: 1.2rem 1.4rem 1.2rem 1.4rem; */
+}
+
+.form-submit-btn-2:hover {
+    background-color: var(--primary-color);
     color: var(--white) !important;
 }
 
