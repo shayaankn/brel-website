@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products | Bhagirath Renewable Energy Private Limited</title>
+    <title>Solar Calculator | Bhagirath Renewable Energy Private Limited</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/our-products.css">
+    <link rel="stylesheet" href="./assets/css/solar-calculator.css">
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -104,7 +104,6 @@
                 data-bs-target="#quoteModal">
                 Get a Quote
             </button>
-
             <button class="navbar-toggler navbar-toggler-2 custom-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                 <span class="material-symbols-outlined toggler-icon-2">
@@ -158,7 +157,8 @@
                             <a class="nav-link white-text hover-light-blue p-3" href="./contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link white-text hover-light-blue p-3" href="./solar-calculator.html">Solar Calculator</a>
+                            <a class="nav-link white-text hover-light-blue p-3" href="./solar-calculator.html">Solar
+                                Calculator</a>
                         </li>
                     </ul>
                 </div>
@@ -167,6 +167,8 @@
                 data-bs-target="#quoteModal">
                 Get a Quote
             </button>
+
+
             <!-- MODAL -->
             <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -277,150 +279,192 @@
             </div>
 
 
+
         </div>
     </nav>
 
-    <!-- HERO SECTION (OUR PRODUCTS) -->
+    <!-- HERO SECTION (SOLAR CALCULATOR) -->
     <div class="container-fluid p-0">
-        <div class="our-products-hero-section dark-overlay-50">
-            <div class="our-products-hero-content">
-                <h1 class="bold-text">Our Products</h1>
+        <div class="solar-calculator-hero-section dark-overlay-50">
+            <div class="solar-calculator-hero-content">
+                <h1 class="bold-text">Solar Calculator</h1>
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                     <li class="breadcrumb-separator">/</li>
-                    <li class="breadcrumb-item active">Our Products</li>
+                    <li class="breadcrumb-item active">Solar Calculator</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- SECTION 1 -->
-    <div class="container pt-4">
-        <h3 class="h3 text-center text-animation colored-heading">Products and Customised Solar Power Generating System
-            Range</h3>
-        <h1 class="h1 text-center text-animation">Solar Panels</h1>
-        <div class="row p-4">
+    <!-- MAIN SECTION -->
+    <h2 class="h2 text-center colored-heading text-animation mt-4">Ready to Switch to Solar? Calculate your requirement.</h2>
+
+    <!-- OLD CALCULATOR -->
+    <!-- <div class="container mt-5">
+        <div class="row justify-content-center">
             <div class="col-md-6">
-                <p class="light-text justified-text">Our solar panels are premium quality and designed to last for
-                    decades. Our facility has stringent quality check procedures, paired with superior raw materials and
-                    a highly skilled workforce. The panels are also certified to function at optimal performance for
-                    various geographic and adverse climatic conditions</p>
-                <p class="light-text justified-text">Each panel manufactured at our associated production facility,
-                    undergoes a series of stringent performance tests for various geographical and climatic conditions.
-                </p>
-                <p>Our Solar Panel Power Capacity Range: 50wp, 60wp, 75wp, 100wp, 120wp, 150wp, 250wp, 340wp and upto
-                    540wp</p>
-            </div>
-            <div class="col-md-6">
-                <img src="./assets/img/our products/section-1-img-alt.webp" alt="Product Image" class="img-fluid">
-            </div>
-        </div>
-    </div>
-
-    <!-- SECTION 3 -->
-    <div class="section-3 py-4 ps-4 ps-md-5 pe-4 pe-md-5">
-        <h2 class="h2 white-text text-center text-animation">Key Features:</h2>
-        <ul class="white-text light-text justified-text">
-            <li>Durability Against Extreme Environmental Conditions High salt mist and ammonia resistance certified by
-                TUVNORD</li>
-            <li>Excellent Anti-PID performance guarantee limited power degradation for mass production (Potential
-                Induced = Degradation) under the test conditions.</li>
-            <li>High efficiency higher module conversion efficiency (up to 21.30%) benefit from half-cell structure
-                TUVNORD=(low resistance characteristic)</li>
-            <li>Low-light Performance Advanced glass and cell surface textured design ensure excellent performance in
-                low-light environment</li>
-            <li>Severe Weather Resilience Certified to withstand: Wind load (2400pascal) Snow load (5400 pascal)</li>
-            <li>PID Resistance</li>
-        </ul>
-    </div>
-
-    <!-- SECTION 2 -->
-    <div class="container pt-4">
-        <h2 class="h2 text-center text-animation">Types of Solar Panels</h2>
-        <div class="row p-4">
-            <div class="col-md-6">
-                <img src="./assets/img/our products/section-2-img-1.webp" alt="Product Image" class="img-fluid">
-                <p class="light-text text-center">Monocrystalline Solar Cell Panels</p>
-            </div>
-            <div class="col-md-6">
-                <img src="./assets/img/our products/section-2-img-2.webp" alt="Product Image" class="img-fluid">
-                <p class="light-text text-center">Polycrystalline Solar Cell Panels</p>
+                <div style="
+                  border: 1px solid #8a8a8a;
+                  box-shadow: 0px 0px 5px #646464;
+                  padding: 20px;
+                  border-radius: 15px;
+                ">
+                    <form id="conversionForm">
+                        <br />
+                        <div class="form-group d-flex">
+                            <Label>Name:-</Label>
+                            <input type="text" placeholder="Enter your name" class="form-control mx-auto mb-3"
+                                id="nameInput" required; style="width: 77%;" />
+                        </div>
+                        <div class="form-group d-flex">
+                            <Label>Number:-</Label>
+                            <input type="tel" placeholder="Enter your phone number" class="form-control mx-auto mb-3"
+                                id="phoneInput" required style="width: 80%;" />
+                        </div>
+                        <div class="form-group d-flex">
+                            <Label>Email:-</Label>
+                            <input type="email" placeholder="Enter your email address" class="form-control mx-auto mb-3"
+                                id="emailInput" required style="width: 77%" />
+                        </div>
+                        <div class="form-group d-flex">
+                            <label>city:-</label>
+                            <input type="text" placeholder="Enter your city" class="form-control mx-auto mb-3"
+                                id="cityInput" required style="width: 75%" />
+                        </div>
+                        <div class=" form-group d-flex">
+                            <label>Bill Amount:-</label>
+                            <input type="number" placeholder="Enter Monthly Bill Amount (INR):"
+                                class="form-control mx-auto mb-3" id="inrInput" required style="width: 83%;" />
+                        </div>
+                        <div class="text-center middle ">
+                            <button type="button" id="conversionForm" class="bg_background bg btn btn-lg btn2 "
+                                data-toggle="modal" data-target="#resultModal">
+                                Calculate Now
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- SECTION 4 -->
-    <div class="container-fluid p-0">
-        <div class="section-4 dark-overlay-50">
-            <div class="section-4-content">
-                <h1 class="bold-text">Solar Street Lights</h1>
-                <p class="light-text justified-text pe-4">Our low maintenance, high efficiency solar street LED lighting
-                    systems ranging from 9W to 50W</p>
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Your Requirement:</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="resultText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- SECTION 6 -->
-    <div class="container pt-4">
-        <h1 class="h1 text-center text-animation">Solar On-Grid System</h1>
-        <div class="row p-4">
-            <div class="col-md-4">
-                <img src="./assets/img/our products/section-6-img.webp" alt="Product Image" class="img-fluid">
+    <!-- NEW CALCULATOR -->
+    <!-- <div class="container calculator-container p-4">
+        <form id="conversionForm">
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" placeholder="Enter your name" class="form-control" id="nameInput" required>
             </div>
-            <div class="col-md-8">
-                <p class="light-text justified-text">Solar Photovoltaic Power Generator comprises SPV modules for
-                    harvesting sun energy, solar deep cycle battery for storage, and a PCU for conversion from DC to AC
-                    and Electricity source as well as a complete set of installation hardware.</p>
-                <p class="light-text justified-text">In on-grid System there is back the Solar power is synchronies with
-                    grid Power and you can clean and green power. It will reduce your electricity bill along with that
-                    major industry, factory hospital, hotel can go for accelerated depreciation. Usually the pay back is
-                    less than 4-5 year.</p>
-                <p>Solar on grid system package range: 3KWA, 5KWA, 10KWA, 20KWA, 50KWA.</p>
+            <div class="mb-3">
+                <label class="form-label">Phone Number:</label>
+                <input type="tel" placeholder="Enter your phone number" class="form-control" id="phoneInput" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email Address:</label>
+                <input type="email" placeholder="Enter your email address" class="form-control" id="emailInput"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">City:</label>
+                <input type="text" placeholder="Enter your city" class="form-control" id="cityInput" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Bill Amount:</label>
+                <input type="number" placeholder="Enter your monthly bill amount (INR)" class="form-control"
+                    id="inrInput" required>
+            </div>
+            <button class="btn calculator-submit-btn p-2" type="submit">
+                Calculate Now
+            </button>
+        </form>
+    </div>
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Your Requirement:</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="resultText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- SECTION 5 -->
-    <div class="container-fluid p-0">
-        <div class="section-5 dark-overlay-50">
-            <div class="section-5-content">
-                <h1 class="bold-text">Solar Photovoltaic Pump Sets</h1>
-                <p class="light-text justified-text pe-4">
-                    Our solar pump sets comprise of solar submersible pump, solar surface mono-block pump and solar
-                    open-well pump ranging from 1HP to 50HP (AC, DC & Hybrid)</p>
+    <!-- NEWER CALCULATOR -->
+    <!-- <div class="container calculator-container p-4">
+        <form id="conversionForm">
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" placeholder="Enter your name" class="form-control" id="nameInput" required>
             </div>
-        </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number:</label>
+                <input type="tel" placeholder="Enter your phone number" class="form-control" id="phoneInput" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email Address:</label>
+                <input type="email" placeholder="Enter your email address" class="form-control" id="emailInput" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">City:</label>
+                <input type="text" placeholder="Enter your city" class="form-control" id="cityInput" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Bill Amount:</label>
+                <input type="number" placeholder="Enter your monthly bill amount (INR)" class="form-control" id="inrInput"
+                    required>
+            </div>
+            <button class="btn calculator-submit-btn p-2" type="submit">
+                Calculate Now
+            </button>
+        </form>
     </div>
+    <div class="container mt-4 p-4">
+        <div id="resultContainer">
+            <h3>Calculation Result</h3>
+            <p id="resultText"></p>
+        </div>
+    </div> -->
 
-    <!-- SECTION 7 -->
-    <div class="container pt-4">
-        <h1 class="h1 text-center text-animation">Solar Off-Grid System</h1>
-        <div class="row p-4">
-            <div class="col-md-8">
-                <p class="light-text justified-text">Solar Photovoltaic (SPV) produces DC electricity directly from the
-                    sunlight and is extremely simple to operate and maintain. They have a long operating life wide
-                    highly reliable and trouble free performance. These are totally noiselessand do not produce any
-                    environmental pollution or ecological imbalance.</p>
-                <p class="light-text justified-text">This energy sources are totally modular in nature, therefore, the
-                    cost per unit installed capacity does not depend very much on the size of the Power Plant.</p>
-                <p class="light-text justified-text">All these important advantages make Solar Photovoltaic Electricity
-                    eminently suitable for Various important applications. SPV electricity may turn out to be the ideal
-                    solution, particularly in remote location, where grid transmitted and centrally generated
-                    electricity is unlikely to be economical, and where the availability of such electricity cannot be
-                    guaranteed on reliable basis. This is due to the fact that the fuel, i.e. The sunlight is available
-                    right at place of use and it does not require qualified technical personnel to operate and maintain
-                    the SPV energy source.</p>
-                <p class="light-text justified-text">Indeed, Solar Photovoltaic are rightly projected as one of the most
-                    important renewable energy source to the supplement and compliment the electrical energy
-                    requirements of the dispersed and energy-deficient population living in the remote and inaccessible
-                    areas.</p>
-                <p>Solar on grid system package range: 500W, 1KWA, 2KWA, 5KWA, 10KWA</p>
-            </div>
-            <div class="col-md-4">
-                <img src="./assets/img/our products/section-7-img.webp" alt="Product Image" class="img-fluid">
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -434,8 +478,7 @@
             <a href="./index.html">
                 <img class="footer-logo pb-3" src="./assets/img/logos/brel-logo-white.webp" alt="BREL" width="160px">
             </a>
-            <p class="pb-3">Power your future sustainably with our cutting-edge solar solutions, harnessing the
-                sun's
+            <p class="pb-3">Power your future sustainably with our cutting-edge solar solutions, harnessing the sun's
                 energy for a brighter tomorrow.</p>
             <div class="footer-icon-container">
                 <a class="social-icon"
@@ -506,6 +549,7 @@
     </button>
 
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/solar-calculator-script.js"></script>
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -514,6 +558,27 @@
 
     <!-- Swiper Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script>var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                observer: true,
+                observeParents: true,
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                    }
+                }
+            });
+        </script> -->
 
 </body>
 
