@@ -286,9 +286,17 @@
                                         <option value="More Than ₹5000">More Than ₹5000</option>
                                     </select>
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label colored-link" for="gridCheck">
+                                            I agree with BREL's <a href="#" class="colored-heading">Terms of Service</a>
+                                        </label>
+                                    </div>
+                                </div>
                                 <input type="hidden" name="_next" value="https://shayaankn.github.io/brel-website/thanks.html">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary form-submit-btn-2 mt-2">Submit</button>
+                                    <button type="submit" class="btn btn-primary form-submit-btn-2 mt-2" id="submitButton" disabled>Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -784,22 +792,24 @@
             <h4 class="d-flex justify-content-center text-secondary-color-1 text-animation h4">| Get in Touch</h4>
             <h1 class="d-flex justify-content-center text-white text-animation h1">Get Started</h1>
 
-            <form class="custom-form text-white row g-3 mt-4 mb-4">
+            <!-- <form class="custom-form text-white row g-3 mt-4 mb-4"> -->
+            <form form id="contactForm" action="https://formsubmit.co/fec11824174ba3db28527c47f54a5991" method="POST"
+                class="custom-form text-white row g-3 mt-4 mb-4">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="inputName">
+                    <input type="text" name="Name" class="form-control" id="inputName">
                 </div>
                 <div class="col-md-6">
                     <label for="inputNumber" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control" id="inputNumber">
+                    <input type="number" name="Number" class="form-control" id="inputNumber">
                 </div>
                 <div class="col-md-12">
                     <label for="inputEmail4" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" name="Email" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-12">
                     <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
+                    <select id="inputState" name="State" class="form-select">
                         <option selected>Choose...</option>
                         <option>Andhra Pradesh</option>
                         <option>Arunachal Pradesh</option>
@@ -841,7 +851,7 @@
                 </div>
                 <div class="col-md-12">
                     <label for="inputHomeCommercial" class="form-label">Solar For Home or Commercial?</label>
-                    <select id="inputHomeCommercial" class="form-select">
+                    <select id="inputHomeCommercial" name="Home-or-Commercial" class="form-select">
                         <option selected>Choose...</option>
                         <option>Individual House or Villa</option>
                         <option>Flat or Apartment</option>
@@ -850,7 +860,7 @@
                 </div>
                 <div class="col-md-12">
                     <label for="inputStateBill" class="form-label">Monthly Average Electricity Bill</label>
-                    <select id="inputStateBill" class="form-select">
+                    <select id="inputStateBill" name="Monthly-Average-Electricity-Bill" class="form-select">
                         <option selected>Choose...</option>
                         <option>Less than ₹1000</option>
                         <option>₹1000 to ₹2000</option>
@@ -860,7 +870,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
+                    <textarea class="form-control" id="message" name="Message" rows="4" placeholder="Enter your message"
                         required></textarea>
                 </div>
                 <div class="col-12">
@@ -871,8 +881,10 @@
                         </label>
                     </div>
                 </div>
+                <input type="hidden" name="_next" value="https://shayaankn.github.io/brel-website/thanks.html">
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+                    <button type="submit" class="btn btn-primary form-submit-btn" id="submitButton"
+                        disabled>Submit</button>
                 </div>
             </form>
         </div>
