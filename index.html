@@ -277,12 +277,11 @@
                                 <div class="col-12">
                                     <input type="submit" id="submitButtonGetQuote"
                                         class="btn btn-primary form-submit-btn-2 mt-2"
-                                        value="Submit">
+                                        value="Submit and Download Brochure">
                                 </div>
+                                <!-- <a target="_blank" style="color:brown" href="./assets/brochure.pdf" download="brochure">Get Broucher</a> -->
                             </form>
-                            <a id="downloadBrochurePdf"
-                                href="https://brelindia.com/assets/img/bg-images/home/Brouchers/BREL%20Brochure.pdf"
-                                download style="display: none;"></a>
+                            <a id="downloadPdf" href="./assets/brochure.pdf" download style="display: none;"></a>
                         </div>
                     </div>
                 </div>
@@ -1415,7 +1414,11 @@
                 .then(data => {
                     document.querySelector("#submitButtonGetQuote").value = "Submitted";
                     if (data.includes('Success')) {
+                        // Redirect to thanks.html page
                         window.location.href = '../thanks.html';
+
+                        // Trigger brochure download
+                        document.getElementById('downloadPdf').click();
                     }
                 })
         })
